@@ -1,0 +1,7 @@
+What you see is the change in sensor conductance in response to the discoloration of the skin as the heart beats. 
+
+ raw heart rate signal.
+Now to work: first separate the different peaks from one another. For this we draw a moving average, mark ROI’s where the heart rate signal lies above the moving average, and finally find the highest point in each ROI as such:
+
+
+We know the position of each peak in time, so calculating the average ‘beats per minute’ (BPM) measure over this signal is straightforward. Just calculate the distance between the peaks, take the average and convert to a per minute value,

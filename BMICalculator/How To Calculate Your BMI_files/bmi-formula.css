@@ -1,0 +1,166 @@
+/* Interactive BMI Formula Styles */
+/* Copyright: Alastair Hazell 2017 */
+
+#bmi_formula {
+  border:1px solid #ccc;
+  padding:10px 10px 0px 10px;
+  margin:20px 0px 0px 0px;
+  font-size:16px;
+}
+
+#units {
+	font-size:15px !important; 
+    height:30px; 
+    line-height:26px;
+    margin-bottom:3px;
+}
+
+#bmi_formula .additional {
+	 line-height:26px; padding-top:2px; padding-left:5px;
+}
+
+.bmi_measure { color:#999; }
+
+.labelhead {
+    float: left;
+	width:20%;
+	padding-top:5px;
+}
+
+.datafield {
+    float: left;
+    font-size:20px !important; 
+    height:30px; 
+    line-height:26px;
+    max-width:100px;
+    padding:0px 5px;
+    border:1px solid #ccc !important;
+}
+
+#formula_image {
+   clear:both;
+   max-width:600px;
+   min-height:180px;
+   margin-top:25px;
+   border:1px solid #ccc;
+   background:#f4f4f4;
+   margin-bottom:0px;
+   padding:15px 10px;
+}
+
+.formulatext {
+	font-size:25px;
+	padding:5px;
+}
+
+/* Formula numbers */
+#formula_bmi {
+	position:relative;
+	float:left;
+	top:20px;
+}
+
+#formula_wh {
+	position:relative;
+	float:left;
+	margin:0px 0px 0px 10px;
+	padding:0px 15px 0px 5px;
+}
+
+#formula_weight, #formula_height {
+	display: inline-block;
+	min-width:120px;
+	text-align:center;
+	margin-bottom:3px;
+}
+
+#formula_height {
+	border-top: 2px solid #aaa;
+}
+
+#formula_equals {
+	position:relative;
+	float:left;
+	font-size:50px;
+	right:10px;
+	top:20px;
+	margin-left:10px;
+}
+
+#formula_result {
+	position:relative;
+	float:left;
+	top:10px;
+	border:1px solid #aaa;
+	background-color:#fff;
+	padding:10px;
+}
+
+#formula_703 {
+	position:relative;
+	float:left;
+	top:20px;
+	margin-right:10px;
+}
+
+.submitbtn {
+    height: 30px;
+    color:#666;
+    background-color:#ddd;
+    border: solid #666 1px;
+    font-size: 15px;
+    margin-top:5px;
+}
+
+.bmi_disclaimer {
+	margin-top:10px;
+	font-size:11px;
+	line-height:12px;
+}
+
+/* ==== Mobile Landscape size from 480px up to 767px (i.e. just below tablet)  - incorporates portrait as well ==== */
+@media
+only screen and (max-width: 767px),
+only screen and (max-device-width: 767px),
+only screen and (-webkit-min-device-pixel-ratio: 2) and (max-device-width: 767px) {
+
+}
+
+
+/* Mobile sizes */
+@media
+only screen and (max-width: 479px) {
+
+	#formula_equals {
+		clear:left;
+		float:left;
+		margin-left:50px;
+		font-size:40px !important;
+		top:15px;
+	}
+	
+	#formula_result {
+
+	}
+	
+	#formula_image {
+		height:220px;
+	}
+
+
+	.formulatext {
+		font-size:22px !important;
+	}
+	
+	.labelhead {
+		width:100% !important;
+		padding-top:0px;
+		margin-top:3px;
+	}
+	
+	.formulatext {
+		font-size:15px;
+		padding:5px;
+	}
+
+}
